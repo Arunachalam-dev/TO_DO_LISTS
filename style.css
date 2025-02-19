@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* max-width: 600px; */
+    padding: 10px;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHUAwgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAwABBf/EABoQAQEBAQEBAQAAAAAAAAAAAAABAhESgqH/xAAbAQEBAQEBAQEBAAAAAAAAAAACAwEABQYEB//EABgRAQEBAQEAAAAAAAAAAAAAAAABEQIS/9oADAMBAAIRAxEAPwD1265a519S/nztrnXLXLWOwuudDrWjW4fpvSfXOjW4r1vSXW9BXYr6L0j6d6FZi3XZUZopoKNi3S9IzRTQUbFpS6jKU0NCxaUpUZTlAbFZXU5TlYFhyuwIUYx1nWYx5Fo2uWja9p+/C6PXLQumFIVrl0Hpz0NLyp1zqdrnoK3FZpvSXW9BXYrNOyo+i9BWeVvTsqM0UqdGxaaOVCaKUKNi8pTSM0c0FCxaU5UZos0anYvKUqOacohYrDiWacrgsLrOdZzHjWja5qhdPbelI7aNo3Q2ichXQ3Q3QWspSKXTnU/TnoK3Fet6S9OzQV2KzTvUfTsqdZYtKU0j6KVOjYt6OVCU5pOhYvKWajNHnQULF5o81CVSUNTsWlUzUJTzWBYtKpKjmnK5OxTrD1nDjxNaT1p21PVe49SRtaHrloWuOR20bobofQ05D9Oeg9OdGuxTrek/TdTrsVlLqUrsqdGxWUpUpSlSo1aUpUZTlToWLSnKjKeanQsWlUzUM1SUAsXlUzUM1SUU7Fs081LNOVydivWHrOHHhaqeq1qeq996kjaoWtana5SR20euWjazCwut0OtKNjj671PpShYynKUTlKVKhVIUqcpRLoKrKUqcKVGjVZTlShypUarKealmnmhQq2apmoyqZop2LZqkqMUzWJ2KdYes0ceDqp6ruqna+herINo2taFrlI1rnRtctdjS60ouwbGUnYMdgWBThQYUS6idpQ4EOJdRO0oUGFEOmacOJw4j0zThwMlE6NVimUsnkRq2aplGKxidPrOM7ReBqpap6T1X0j1ZAoV20LWqNXGrjnV1o46zApQoMKBYl1ThQYcidiPVKHBkJDqB6dhRyFEOma7CGFEOm6cKDCiVcpk8p5PIMqsVyjFIwKr9fjB9M4HgaS0zPpnrROjWZpjWZnMrOxmYn0UPLMNQ6OKRmSqHRSHIzI9Juuxmfn6KFHYzPz9NKHGZKtKHlmBysUzXWYFd4zM4X//Z);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.todolist{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    background-color: rgba(255, 242, 60, 0.753);
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+.todolist h2{
+   color: chocolate;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+    text-align: center; */
+    margin-bottom: 30px;
+    margin-left: 60px;
+    font-size: 40px;
+}
+
+.todolist h2 img{
+    width: 50px;
+    margin-left:10px;
+    
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkgray;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+   
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: blueviolet;
+    cursor: pointer;
+    color: whitesmoke;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+position: absolute;
+height:29px;
+width: 29px;
+border-radius: 50%;
+background-image: url(download.png);
+background-size: cover;
+background-position: center;
+top: 10px;
+left: 12px;
+}
+
+ul li.check{
+    color: brown;
+    text-decoration: line-through;
+}
+
+ul li.check::before{
+    background-image: url(images.png);
+ 
+
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: burlywood;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(119, 121, 117);
+}
+ul li span:hover{
+    background: rgb(110, 218, 9);
+    background-color: red;
+}
